@@ -1,5 +1,5 @@
 
-# Teamwork Contract
+## Teamwork Contract
 
 1. Division of Labour:
 
