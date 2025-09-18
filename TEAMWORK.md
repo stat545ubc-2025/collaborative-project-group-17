@@ -14,9 +14,8 @@
 3. Communication:
    * We will communicate via Slack, and will meet on **Thursday**.
    
-   
-4. Additionally, see our team introductions here: 
-#1 
-#2 
-#3 
-#4
+4. This is our group's favourite function so far! 
+```R
+select()
+```
+
