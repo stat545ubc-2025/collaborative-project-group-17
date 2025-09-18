@@ -1,4 +1,6 @@
 
+# Teamwork Contract
+
 1. Division of Labour:
 
   Team Member | Task 
