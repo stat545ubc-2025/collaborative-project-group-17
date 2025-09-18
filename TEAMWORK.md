@@ -4,7 +4,7 @@
 1. Division of Labour:
 
   Team Member | Task | Pull request reviewer
-  ------------ | ------------
+  ------------ | ------------ | ------------
   @dengbruh | Exercises 3, 4, 6, 8 | @smgarcia-bio
   @fatyas | Exercises 1, 2, 3, 4 | @am-field
   @am-field | Exercises 3, 4, 5 | @fatyas
