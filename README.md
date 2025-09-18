@@ -1,6 +1,7 @@
 ### Hi there!
 This project serves as an introduction to using and collaborating in GitHub, and is a deliverable for the **545A Exploratory Data Analysis class** at UBC (Fall 2025) ✨
 Our team for this project: @smgarcia-bio, @dengbruh, @fatyas, @am-field
+
 In the project folder, you can find three major files. 
 - [X] This README.md file, explaining the project and its contents;
 - [X] A teamwork contract, TEAMWORK.md, covering division of labor, communication, and timing of the project;
