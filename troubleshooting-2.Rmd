@@ -16,13 +16,15 @@ Note that errors are not all syntactic (i.e., broken code)! Some are logical err
 [MovieLens](https://dl.acm.org/doi/10.1145/2827872) are a series of datasets widely used in education, that describe movie ratings from the MovieLens [website](https://movielens.org/). There are several MovieLens datasets, collected by the [GroupLens Research Project](https://grouplens.org/datasets/movielens/) at the University of Minnesota. Here, we load the MovieLens 100K dataset from Rafael Irizarry and Amy Gill's R package, [dslabs](https://cran.r-project.org/web/packages/dslabs/dslabs.pdf), which contains datasets useful for data analysis practice, homework, and projects in data science courses and workshops. We'll also load other required packages.
 
 ```{r}
-### ERROR HERE ###
-load.packages(dslabs)
-load.packages(tidyverse)
-load.packages(stringr)
+### FIXED ERROR HERE ###
+#changed load.packages to library and added "install.packages" for dslabs 
+install.packages("dslabs") #Remove if already have package
+library(dslabs)
+library(tidyverse)
+library(stringr)
 install.packages("devtools") # Do not run this if you already have this package installed! 
 devtools::install_github("JoeyBernhardt/singer")
-load.packages(gapminder)
+library(gapminder)
 ```
 
 Let's have a look at the dataset! My goal is to:
@@ -32,10 +34,11 @@ Let's have a look at the dataset! My goal is to:
 -   Have a quick look at the tibble, using a *dplyr function*.
 
 ```{r}
-### ERROR HERE ###
+### FIXED ERROR HERE ###
+changed dim function to head to be able to see the tibble
 class(dslabs::movielens)
 movieLens <- as_tibble(dslabs::movielens)
-dim(movieLens)
+head(movieLens)
 ```
 
 Now that we've had a quick look at the dataset, it would be interesting to explore the rows (observations) in some more detail. I'd like to consider the movie entries that...
@@ -98,17 +101,17 @@ movieLens %>%
 Without using `group_by()`, I want to find out how many movie reviews there have been for each year.
 
 ```{r}
-### ERROR HERE ###
+### FIXED ERROR HERE ###
 movieLens %>%
-  tally(year)
+  count(year)
 ```
 
 Both `count()` and `tally()` can be grouped by multiple columns. Below, I want to count the number of movie reviews by title and rating, and sort the results.
 
 ```{r}
-### ERROR HERE ###
+### FIXED ERROR HERE ###
 movieLens %>%
-  count(c(title, rating), sort = TRUE)
+  count(title, rating, sort = TRUE)
 ```
 
 Not only do `count()` and `tally()` quickly allow you to count items within your dataset, `add_tally()` and `add_count()` are handy shortcuts that add an additional columns to your tibble, rather than collapsing each group.
