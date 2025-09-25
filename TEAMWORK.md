@@ -3,12 +3,12 @@
 
 1. Division of Labour:
 
-  Team Member | Task | Pull request reviewer
-  ------------ | ------------ | ------------
-  @dengbruh | Exercises 3, 4, 6, 8 | @smgarcia-bio
-  @fatyas | Exercises 1, 2, 3, 4 | @am-field
-  @am-field | Exercises 3, 4, 5 | @fatyas
-  @smgarcia-bio | Exercises 3, 4, 7 | @dengbruh
+  Team Member | Deliverable 1 Task | Deliverable 2 Task | Pull Request Reviewer
+  ------------ | ------------ | ------------ | ------------
+  @dengbruh | Exercises 3, 4, 6, 8 | Exercises 5, 6 | @smgarcia-bio
+  @fatyas | Exercises 1, 2, 3, 4 | Exercises 1, 3 | @am-field
+  @am-field | Exercises 3, 4, 5 | Exercise 4, README, TEAMWORK | @fatyas
+  @smgarcia-bio | Exercises 3, 4, 7 | Exercises 1, 2 | @dengbruh
    
 2. Timing:
    * We will have pull requests ready for Thursday's meeting. For future assignments, all individual work, including a pull request, will be completed by Thursdays. We will meet in person on Thursdays to review and merge pull requests. 
@@ -18,6 +18,6 @@
    
 4. This is our group's favourite function so far! Each week, we will decide on a new favourite function 
 ```R
-select()
+group_by()
 ```
 
