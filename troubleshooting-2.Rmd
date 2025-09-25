@@ -155,6 +155,7 @@ We can find the minimum height and mass within each species, ignoring the missin
 
 ```{r}
 ### FIXED ERROR HERE ###
+# combined "height" and "mass" into a character vector to apply the function to both columns 
 starWars %>%
   group_by(species) %>%
   summarise(across(c("height", "mass"), function(x) min(x, na.rm=TRUE)))
@@ -172,6 +173,7 @@ Manually create a tibble with 4 columns:
 
 ```{r}
 ### FIXED ERROR HERE ###
+# added quotation marks around birth locations 
 fakeStarWars <- tribble(
   ~name,            ~birth_weight,  ~birth_year, ~birth_location,
   "Luke Skywalker",  1.35      ,   1998        ,  "Liverpool, England",
