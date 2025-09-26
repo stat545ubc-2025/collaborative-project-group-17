@@ -19,12 +19,12 @@ Note that errors are not all syntactic (i.e., broken code)! Some are logical err
 
 ### FIXED ERROR HERE ###
 #changed load.packages to library and added "install.packages" for dslabs 
-install.packages("dslabs") #Remove if already have package
+#install.packages("dslabs") #Remove if already have package
 library(dslabs)
 library(tidyverse)
 library(stringr)
-install.packages("devtools") # Do not run this if you already have this package installed! 
-devtools::install_github("JoeyBernhardt/singer")
+#install.packages("devtools") # Do not run this if you already have this package installed! 
+#devtools::install_github("JoeyBernhardt/singer")
 library(gapminder)
 ```
 
