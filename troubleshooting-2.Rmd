@@ -35,7 +35,7 @@ Let's have a look at the dataset! My goal is to:
 
 ```{r}
 ### FIXED ERROR HERE ###
-changed dim function to head to be able to see the tibble
+# changed dim function to head to be able to see the tibble
 class(dslabs::movielens)
 movieLens <- as_tibble(dslabs::movielens)
 head(movieLens)
@@ -50,21 +50,23 @@ Now that we've had a quick look at the dataset, it would be interesting to explo
 -   have *more than* 4.5 stars, and were filmed *before* 1995.
 
 ```{r}
-### ERROR HERE ###
+### FIXED ERROR HERE ### 
+# In fourth set of conditions, changed text "month == 2000" to "year == 2000"
 filter(movieLens, genres == "Drama")
 filter(movieLens, !genres == "Drama")
 filter(movieLens, year >= 2000)
-filter(movieLens, year == 1999 | month == 2000)
+filter(movieLens, year == 1999 | year == 2000)
 filter(movieLens, rating > 4.5, year < 1995)
 ```
 
 While filtering for *all movies that do not belong to the genre drama* above, I noticed something interesting. I want to filter for the same thing again, this time selecting variables **title and genres first,** and then *everything else*. But I want to do this in a robust way, so that (for example) if I end up changing `movieLens` to contain more or less columns some time in the future, the code will still work. Hint: there is a function to select "everything else"...
 
 ```{r}
-### ERROR HERE ###
+### FIXED ERROR HERE ###
+# in select() command rearranged column names to be (title, genres, everything())
 movieLens %>%
   filter(!genres == "Drama") %>%
-  select(title, genres, year, rating, timestamp)
+  select(title, genres, everything())
 ```
 
 ## Exercise 2: Calculating with `mutate()`-like functions
